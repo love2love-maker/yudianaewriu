@@ -1,126 +1,45 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>LIVE CHAT</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Private Webcam...</title>
+  <meta name="description" content="Geo redirect page." />
+
   <!-- Social Preview -->
-  <meta property="og:title" content="LIVE CHAT" />
-  <meta property="og:description" content="LIVE CHAT" />
-  <meta property="og:image" content="https://ik.imagekit.io/didot/984b994d-0007-4afa-a1ee-858b747b65ab.jpg?updatedAt=1745251925359" />
+  <meta property="og:title" content="Redirect Page" />
+  <meta property="og:description" content="Redirecting based on your location." />
+  <meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqasnJuaOmirR7RHcewoEmiAF-synsRIK1UBML_GmajQAGA1-wLayLe83X3JTbIxxjl27m5MXe8qVwBxQAQYRp2cH1y4teuer_PsdaKe4stiRq-PbjuvN-0FRYGQvi10bNu6TCv2anxzXXixsw_2PBeubI-uUjVbSivQpVY7wMemUy-RxpDDxC7GLp/w945-h600-p-k-no-nu/sapm.jpg" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://bellsapira.com/" />
 
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Redirect Page" />
   <meta name="twitter:description" content="Geo-based redirect." />
   <meta name="twitter:image" content="https://iili.io/KTfESYF.md.png" />
-  
-  <script src="https://kit.fontawesome.com/a2e0f1f0c5.js" crossorigin="anonymous"></script>
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: linear-gradient(to right, #f0f2f5, #e4ecf5);
-    }
 
-    .preview-box {
-      width: 90%;
-      max-width: 400px;
-      background-color: white;
-      border: 1px solid #ddd;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-      padding: 24px;
-      border-radius: 16px;
-      text-align: center;
-    }
+  <script>
+    const youtubeURL = "https://www.youtube.com/";
+    const destinationURL = "https://dm3prrx.flirtwithhoney.com/ua9hmnl?s1=baru&cid=baru";
 
-    .preview-box img {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 16px;
-    }
-
-    .preview-box strong {
-      font-size: 22px;
-      margin-bottom: 8px;
-      display: block;
-    }
-
-    .preview-box p {
-      font-size: 16px;
-      margin-bottom: 20px;
-      color: #555;
-    }
-
-    .button-group {
-      display: flex;
-      gap: 14px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      padding: 12px 18px;
-      font-size: 16px;
-      border-radius: 8px;
-      color: white;
-      text-decoration: none;
-      min-width: 140px;
-      font-weight: 600;
-      transition: background-color 0.3s ease;
-    }
-
-    .telegram {
-      background-color: #0088cc;
-    }
-
-    .telegram:hover {
-      background-color: #007ab8;
-    }
-
-    .whatsapp {
-      background-color: #25D366;
-    }
-
-    .whatsapp:hover {
-      background-color: #1ebe5d;
-    }
-
-    .fa-brands {
-      font-size: 18px;
-    }
-  </style>
+    fetch("https://ipapi.co/json/")
+      .then(res => res.json())
+      .then(data => {
+        const country = data.country_code; // contoh: "ID"
+        if (country === "ID") {
+          window.location.href = youtubeURL;
+        } else {
+          window.location.href = destinationURL;
+        }
+      })
+      .catch(() => {
+        // fallback: redirect ke destination
+        window.location.href = destinationURL;
+      });
+  </script>
 </head>
-<body>
-
-  <div class="preview-box">
-    <img src="https://ik.imagekit.io/didot/984b994d-0007-4afa-a1ee-858b747b65ab.jpg?updatedAt=1745251925359" alt="Preview">
-    <strong>LIVE CHAT</strong>
-    <p>Chat with me on Telegram or WhatsApp!</p>
-    <div class="button-group">
-      <a href="https://dm3prrx.flirtwithhoney.com/ua9hmnl?s1=baru&cid=baru" class="button telegram" target="_blank">
-        <i class="fa-brands fa-telegram"></i> Telegram
-      </a>
-      <a href="https://dm3prrx.flirtwithhoney.com/ua9hmnl?s1=baru&cid=baru" class="button whatsapp" target="_blank">
-        <i class="fa-brands fa-whatsapp"></i> WhatsApp
-      </a>
-    </div>
-  </div>
-
-</body>
- <!-- Histats.com  START  (aync)-->
+<!-- Histats.com  START  (aync)-->
 <script type="text/javascript">var _Hasync= _Hasync|| [];
 _Hasync.push(['Histats.start', '1,4222781,4,0,0,0,00010000']);
 _Hasync.push(['Histats.fasi', '1']);
@@ -132,5 +51,4 @@ hs.src = ('//s10.histats.com/js15_as.js');
 })();</script>
 <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4222781&101" alt="" border="0"></a></noscript>
 <!-- Histats.com  END  -->
-
 </html>
